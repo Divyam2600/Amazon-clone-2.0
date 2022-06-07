@@ -3,7 +3,7 @@ import { doc, setDoc, serverTimestamp, getFirestore } from 'firebase/firestore'
 import * as admin from 'firebase-admin'
 
 // secure a connection to firebase
-const serviceAccount = require('../../../serviceAccountKey.json')
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY)
 
 const app = !admin.apps.length
   ? admin.initializeApp({
