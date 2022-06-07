@@ -1,23 +1,69 @@
-# Next.js + Tailwind CSS Example
+# Amazon Clone 2.0
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
-## Deploy your own
+![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Next.js + Tailwind CSS
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Next.js is a React Production Framework which gives the best developer experience with all the features for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
 
-## How to use
+## How To Start :
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### Start with a pre-made Starter Template
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example with a pre-configured starter template of NextJs App with TailwindCSS:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+npx create-next-app --e with-tailwindcss with-tailwindcss-app
 # or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+yarn create next-app --e with-tailwindcss with-tailwindcss-app
+```
+### Now finally run your Project :
+Run your build process with `npm run dev` or whatever command is configured in your `package.json` file.
+
+```bash
+npm run dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Environment variables :
+
+Open or create a `.env` file then edit add this setting
+
+```
+SKIP_PREFLIGHT_CHECK=true
+
+# Authentication
+GOOGLE_ID=key_goes_here
+GOOGLE_SECRET=key_goes_here
+NEXTAUTH_URL=http://localhost:3000
+
+# Stripe
+STRIPE_PUBLIC_KEY=key_goes_here
+STRIPE_SECRET_KEY=key_goes_here
+
+# Stripe Terminal/CLI
+STRIPE_SIGNING_SECRET=key_goes_here
+
+HOST=http://localhost:3000
+
+# Need to add this to... google cloud
+# http://localhost:3000/api/auth/callback/google
+```
+
+
+## Author
+
+👤 **Divyam Agarwal**
+
+- Website: 
+- Github: [@Divyam2600](https://github.com/Divyam2600)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
