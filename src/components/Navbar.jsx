@@ -59,7 +59,7 @@ function Navbar() {
             }
             {SidebarData.map( (item, index) => {
               return (
-                  <div className=" items-center justify-center my-4 mx-1 border border-gray-500 rounded-md p-3 hover:bg-white hover:text-amazon_blue transition ease-out duration-150 hover:ease-in cursor-pointer font-semibold font-sans">
+                  <div className=" items-center justify-center my-4 mx-1 border border-gray-500 rounded-md p-3 hover:bg-white hover:text-amazon_blue transition ease-out duration-150 hover:ease-in cursor-pointer font-semibold font-sans" key={index} >
                     <ul 
                       key={index} 
                       className=""

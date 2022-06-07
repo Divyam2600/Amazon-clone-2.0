@@ -3,7 +3,7 @@ import { groupBy } from 'lodash'
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 const path = require('path')
 
-export default async (req, res) => {
+const ses = async (req, res) => {
   const { items, email } = req.body
 
   const groupedItems = Object.values(groupBy(items, 'id'))
@@ -61,3 +61,5 @@ export default async (req, res) => {
   console.log('session created', session.id)
   res.status(200).json({ id: session.id })
 }
+
+export default ses

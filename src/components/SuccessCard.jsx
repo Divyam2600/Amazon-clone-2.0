@@ -10,6 +10,7 @@ function SuccessCard() {
       <div className=" flex flex-col rounded-md border bg-green-300 px-10 pb-10 shadow-lg ">
         <Image
           src="/success.png"
+          alt="Success"
           width={300}
           height={400}
           className="items-center"

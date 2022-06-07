@@ -8,6 +8,7 @@ function SuccessCard() {
       <div className=" flex flex-col rounded-2xl border bg-red-200 px-10 pb-10 shadow-md ">
         <Image
         src="/error.png"
+        alt="Error"
           width={300}
           height={400}
           className="items-center"

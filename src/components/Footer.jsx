@@ -53,6 +53,7 @@ function Footer() {
         <Link href="/">
           <Image
             src="/amazon.png"
+            alt="Amazon"
             width={150}
             height={40}
             objectFit="contain"

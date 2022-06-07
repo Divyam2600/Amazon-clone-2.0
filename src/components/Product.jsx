@@ -58,6 +58,7 @@ function Product({id, title, price, description, category, image}) {
                         <div className="my-2 relative rounded-lg text-center hover:opacity-100 hover:scale-105 transition-all ease-out hover:ease-in duration-150">
                             <Image 
                                 src={image} 
+                                alt={title}
                                 height={200} 
                                 width={200} 
                                 objectFit="contain" 
@@ -81,7 +82,7 @@ function Product({id, title, price, description, category, image}) {
                             {Array(rating)
                                 .fill()
                                 .map((_,i) => (
-                                <StarIcon className="h-5 text-yellow-500" />
+                                <StarIcon className="h-5 text-yellow-500" key={i} />
                             ))}
                         </div>
 

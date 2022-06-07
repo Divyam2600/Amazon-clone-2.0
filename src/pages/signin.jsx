@@ -13,6 +13,7 @@ export default function SignIn({ providers }) {
         <div className=" flex flex-col rounded-2xl border bg-amazon_blue p-10 font-semibold text-white shadow-md pt-8 ">
           <Image
             src="/amazon.png"
+            alt="Amazon"
             width={250}
             height={80}
             objectFit="contain"

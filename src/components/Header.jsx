@@ -49,6 +49,7 @@ function Header({ products }) {
           <Link href="/">
             <Image
               src="/amazon.png"
+              alt="Amazon"
               width={150}
               height={40}
               objectFit="contain"
@@ -142,7 +143,7 @@ function Header({ products }) {
       <div className=" flex items-center space-x-3 bg-amazon_blue-light p-2 pl-6 text-sm text-white outline-none">
         <p className="link">Prime Video</p>
         <p className="link">Amazon Business</p>
-        <p className="link">Today's Deals</p>
+        <p className="link">Today&#39;s Deals</p>
         <p className="link hidden lg:inline-flex">Electronics</p>
         <p className="link hidden lg:inline-flex">Food & Grocery</p>
         <p className="link hidden lg:inline-flex">Prime</p>

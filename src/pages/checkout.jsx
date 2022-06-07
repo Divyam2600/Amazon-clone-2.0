@@ -58,6 +58,7 @@ function Checkout() {
           <div className="m-5 flex-grow shadow-sm">
             <Image
               src="/checkout_banner.png"
+              alt="Checkout_Banner"
               width={980}
               height={250}
               objectFit="contain"
