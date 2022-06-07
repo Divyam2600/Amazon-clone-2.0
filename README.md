@@ -7,7 +7,7 @@
   </a>
 </p>
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+![Template Screenshot](TemplateScreenshot.png?raw=true "Template Screenshot")
 
 ## Next.js + Tailwind CSS
 
