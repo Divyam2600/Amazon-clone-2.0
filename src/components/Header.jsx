@@ -78,7 +78,7 @@ function Header({ products }) {
               onMouseEnter={() => setShowResults(true)}
               onMouseOver={() => setShowResults(true)}
               onMouseLeave={() => setShowResults(false)}
-              className="absolute bottom-0 z-10 h-auto w-[95.45%] translate-y-full max-h-96 bg-white overflow-y-auto rounded-b-md"
+              className="absolute bottom-0 z-10 h-auto max-h-96 w-[95.45%] translate-y-full overflow-y-auto rounded-b-md bg-white"
             >
               {searchTerm && (
                 <p className="py-2 text-center text-xs text-gray-400">

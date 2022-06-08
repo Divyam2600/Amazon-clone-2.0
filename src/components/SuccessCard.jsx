@@ -26,8 +26,8 @@ function SuccessCard() {
           It willl be delivered soon.
         </p>
         <Link href="/">
-          <button className="mx-auto mt-4 w-3/4 items-center rounded-2xl border-none bg-green-600 p-4 text-xl font-semibold justify-evenly text-white shadow-md link flex">
-          <ShoppingCartIcon className="h-10 text-md" />
+          <button className="link mx-auto mt-4 flex w-3/4 items-center justify-evenly rounded-2xl border-none bg-green-600 p-4 text-xl font-semibold text-white shadow-md">
+            <ShoppingCartIcon className="text-md h-10" />
             Continue Shopping
           </button>
         </Link>

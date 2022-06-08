@@ -37,11 +37,11 @@ const ses = async (req, res) => {
     },
     shipping_options: [
       {
-        shipping_rate:'shr_1KyzlUSDO3e3ORqWiKEaKCoz',
+        shipping_rate: 'shr_1KyzlUSDO3e3ORqWiKEaKCoz',
       },
       {
-        shipping_rate:'shr_1KyzmISDO3e3ORqWSfxB3RtU',
-      }
+        shipping_rate: 'shr_1KyzmISDO3e3ORqWSfxB3RtU',
+      },
     ],
     line_items: transfromedItems,
     mode: 'payment',
@@ -53,7 +53,7 @@ const ses = async (req, res) => {
       // },
       {
         coupon: '41fmeutJ',
-      },      
+      },
     ],
     metadata: {
       email,

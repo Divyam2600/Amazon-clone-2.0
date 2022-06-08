@@ -55,7 +55,6 @@ export const final = async (req, res) => {
 
     // handle checkout session completed event
     if (event.type === 'checkout.session.completed') {
-
       console.log('Session completed success')
       const session = event.data.object
 

@@ -7,8 +7,8 @@ function SuccessCard() {
     <div className="">
       <div className=" flex flex-col rounded-2xl border bg-red-200 px-10 pb-10 shadow-md ">
         <Image
-        src="/error.png"
-        alt="Error"
+          src="/error.png"
+          alt="Error"
           width={300}
           height={400}
           className="items-center"
@@ -24,8 +24,8 @@ function SuccessCard() {
           Please return to the homepage.
         </p>
         <Link href="/">
-          <button className="mx-auto mt-4 w-3/4 items-center rounded-2xl border-none bg-red-600 p-4 text-xl font-semibold justify-evenly text-white shadow-md link flex">
-          <HomeIcon className="h-10 text-md" />
+          <button className="link mx-auto mt-4 flex w-3/4 items-center justify-evenly rounded-2xl border-none bg-red-600 p-4 text-xl font-semibold text-white shadow-md">
+            <HomeIcon className="text-md h-10" />
             Return To HomePage
           </button>
         </Link>

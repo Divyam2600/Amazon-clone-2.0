@@ -21,7 +21,7 @@ function Navbar() {
     <div className="justify-start items-center">
       {/* Right Navbar */}
       <div className='h-10 flex justify-start items-center'>
-        <Link href="/" className='ml-8 text-4xl bg-none'>
+        <a className='ml-8 text-4xl bg-none'>
             <p
               className="link pl-2 flex items-center text-center text-white"
               onClick={showSidebar}
@@ -29,15 +29,15 @@ function Navbar() {
               <MenuIcon className="h-6 mr-1" />
               <h3 className=" font-semibold text-lg">All</h3>
             </p>
-        </Link>
+        </a>
       </div>
 
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu inactive'}>
           <div className=' text-white' onClick={showSidebar}>
             <li className=' bg-amazon_blue h-10 flex justify-start '>
-              <Link href='/' className=' bg-none'>
+              <a className=' bg-none'>
                 <XIcon className="h-8 -mt-0.5 cursor-pointer" />
-              </Link>
+              </a>
             </li>
             {/* {session ? 
               <> 

@@ -9,7 +9,7 @@ import { useSession } from 'next-auth/react'
 import { groupBy } from 'lodash'
 import { TransitionGroup } from 'react-transition-group'
 import { CSSTransition } from 'react-transition-group'
-import {loadStripe} from '@stripe/stripe-js';
+import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import { CreditCardOutline } from 'heroicons-react'
 
@@ -20,18 +20,18 @@ function Checkout() {
   const total = useSelector(selectTotal)
   const { data: session } = useSession()
 
-  const createCheckoutSession = async () =>{
+  const createCheckoutSession = async () => {
     const stripe = await stripePromise
 
-    const checkoutSession = await axios.post('/api/create-checkout-session',{
+    const checkoutSession = await axios.post('/api/create-checkout-session', {
       items,
-      email: session.user.email
+      email: session.user.email,
     })
     //Redirect user to stripe checkout
     const result = await stripe.redirectToCheckout({
-      sessionId: checkoutSession.data.id
+      sessionId: checkoutSession.data.id,
     })
-    if(result.error){
+    if (result.error) {
       alert(result.error.message)
     }
   }
@@ -39,7 +39,6 @@ function Checkout() {
   const groupItems = Object.values(groupBy(items, 'id'))
   return (
     <>
-      
       <div className="bg-gray-100">
         <Header />
         <main className="mx-auto h-full max-w-screen-2xl lg:flex">
@@ -61,7 +60,11 @@ function Checkout() {
               </h1>
               <TransitionGroup>
                 {groupItems.map((group, i) => (
-                  <CSSTransition key={group[0].image} timeout={500} classNames="item">
+                  <CSSTransition
+                    key={group[0].image}
+                    timeout={500}
+                    classNames="item"
+                  >
                     <CheckoutProduct
                       key={i}
                       id={group[0].id}
@@ -79,26 +82,33 @@ function Checkout() {
             </div>
           </div>
           {/* Right */}
-          <CSSTransition in={items.length > 0} timeout={300} classNames="disappear" unmountOnExit>
-                <div className="my-5 mx-5 flex flex-col bg-white p-3 shadow-md">
-                  <h2 className="whitespace-nowrap text-center font-semibold text-xl">
-                    SubTotal ({items.length} items) :
-                    <span className="ml-1 font-bold text-xl text-gray-800">
-                      <Currency quantity={total} currency="INR" />
-                    </span>
-                  </h2>
-                  <button
-                  role="link"
-                  onClick={createCheckoutSession}
-                    className={`button mt-2 flex justify-center items-center ${
-                      !session && 'inactive cursor-not-allowed text-gray-300'
-                    }`}
-                    disabled={!session}
-                  >
-                    <CreditCardOutline className="h-8 w-8"/>
-                    <a className="text-lg font-bold ml-2 mt-[1.5px]">{!session ? 'Sign In to CheckOut' : 'Proceed To CheckOut'} </a>
-                  </button>
-                </div>
+          <CSSTransition
+            in={items.length > 0}
+            timeout={300}
+            classNames="disappear"
+            unmountOnExit
+          >
+            <div className="my-5 mx-5 flex flex-col bg-white p-3 shadow-md">
+              <h2 className="whitespace-nowrap text-center text-xl font-semibold">
+                SubTotal ({items.length} items) :
+                <span className="ml-1 text-xl font-bold text-gray-800">
+                  <Currency quantity={total} currency="INR" />
+                </span>
+              </h2>
+              <button
+                role="link"
+                onClick={createCheckoutSession}
+                className={`button mt-2 flex items-center justify-center ${
+                  !session && 'inactive cursor-not-allowed text-gray-300'
+                }`}
+                disabled={!session}
+              >
+                <CreditCardOutline className="h-8 w-8" />
+                <a className="ml-2 mt-[1.5px] text-lg font-bold">
+                  {!session ? 'Sign In to CheckOut' : 'Proceed To CheckOut'}{' '}
+                </a>
+              </button>
+            </div>
           </CSSTransition>
         </main>
         <Footer />
