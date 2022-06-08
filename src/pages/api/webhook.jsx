@@ -39,7 +39,7 @@ const fulfillOrder = async (session) => {
   return refDoc
 }
 
-export const final = async (req, res) => {
+const final = async (req, res) => {
   if (req.method === 'POST') {
     const requestBuffer = await buffer(req)
     const payload = requestBuffer.toString()
@@ -66,9 +66,10 @@ export const final = async (req, res) => {
   }
 }
 
+export default final
+
 export const config = {
   api: {
     bodyParser: false,
-    externalResolver: true,
   },
 }

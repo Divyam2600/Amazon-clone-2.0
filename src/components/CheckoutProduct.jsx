@@ -133,10 +133,11 @@ function CheckoutProduct({
             </div>
             <p className="my-2 text-xs line-clamp-3">{description}</p>
             <a className="text-xl font-bold text-gray-800">{quantity}</a> x{' '}
-            <a className="text-xl font-bold text-gray-800">
+            <a className="text-xl mr-[2px] font-bold text-gray-800">
               <Currency quantity={price} currency="INR" />
             </a>
-            <span className="text-xl font-bold text-gray-800">
+            =
+            <span className="text-xl ml-[2px] font-bold text-gray-800">
               <Currency quantity={total} currency="INR" />
             </span>
           </div>
