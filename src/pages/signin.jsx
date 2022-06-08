@@ -30,7 +30,7 @@ export default function SignIn({ providers }) {
             <div key={provider.name}>
               <button
                 onClick={() => signIn(provider.id)}
-                className="link mx-auto my-4 flex w-3/4 items-center justify-evenly rounded-2xl bg-green-600 p-4 text-xl font-semibold text-white shadow-md hover:border-none"
+                className="link mx-auto my-4 flex w-3/4 items-center justify-evenly rounded-2xl bg-green-600 p-4 text-lg md:text-xl font-semibold text-white shadow-md hover:border-none"
               >
                 <LoginIcon className="text-md mr-1 h-10" />
                 Sign in with {provider.name}

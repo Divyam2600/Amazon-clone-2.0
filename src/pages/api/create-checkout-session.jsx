@@ -47,12 +47,14 @@ const ses = async (req, res) => {
     mode: 'payment',
     success_url: `${process.env.HOST}/success`,
     cancel_url: `${process.env.HOST}/checkout`,
-    // discounts: [
-    //   {
-    //     coupon: 'bqa4ynJb',
-    //   },
-      
-    // ],
+    discounts: [
+      // {
+      //   coupon: '05rEVp32',
+      // },
+      {
+        coupon: '41fmeutJ',
+      },      
+    ],
     metadata: {
       email,
       images: JSON.stringify(groupedImages),

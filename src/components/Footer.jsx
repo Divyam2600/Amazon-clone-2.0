@@ -54,13 +54,13 @@ function Footer() {
           <Image
             src="/amazon.png"
             alt="Amazon"
-            width={150}
-            height={40}
+            width={140}
+            height={30}
             objectFit="contain"
             className="cursor-pointer"
           />
         </Link>
-        <h1 className="-mt-1 text-2xl">© Divyam Agarwal</h1>
+        <h1 className="-mt-1 text-xl md:text-2xl">© Divyam Agarwal</h1>
       </div>
       <p className="flex flex-grow justify-evenly border-t border-gray-600 bg-amazon_blue p-2 text-center font-semibold text-white">
         Note : This has been made only for educational purposes. No copyright

@@ -6,7 +6,6 @@ import CheckoutProduct from '../components/CheckoutProduct'
 import { selectItems, selectTotal } from '../slices/basketSlice'
 import Currency from 'react-currency-formatter'
 import { useSession } from 'next-auth/react'
-import { ToastContainer } from 'react-toastify'
 import { groupBy } from 'lodash'
 import { TransitionGroup } from 'react-transition-group'
 import { CSSTransition } from 'react-transition-group'
@@ -40,17 +39,7 @@ function Checkout() {
   const groupItems = Object.values(groupBy(items, 'id'))
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={2500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
+      
       <div className="bg-gray-100">
         <Header />
         <main className="mx-auto h-full max-w-screen-2xl lg:flex">

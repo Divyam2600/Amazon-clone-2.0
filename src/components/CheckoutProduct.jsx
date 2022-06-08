@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Currency from 'react-currency-formatter'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
 import { addToBasket, removeFromBasket, removeGroupedFromBasket } from '../slices/basketSlice'
 ''
 function CheckoutProduct({
@@ -96,6 +97,17 @@ function CheckoutProduct({
   }
   return (
     <>
+    <ToastContainer
+        position="top-right"
+        autoClose={2500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
         <div className='border-b py-4'>
       <div className="grid grid-cols-5 ">
         <Image src={image} alt={title} width={200} height={200} objectFit="contain" />
