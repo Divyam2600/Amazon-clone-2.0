@@ -1,9 +1,9 @@
+import 'react-toastify/dist/ReactToastify.css'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
 import ProductFeed from '../components/ProductFeed'
-import 'react-toastify/dist/ReactToastify.css'
 import { getSession } from 'next-auth/react'
 
 export default function Home({ products }) {
