@@ -5,6 +5,7 @@ import Currency from 'react-currency-formatter'
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
 import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import {
   addToBasket,
   removeFromBasket,
