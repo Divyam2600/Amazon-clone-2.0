@@ -5,7 +5,7 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="/TemplateVideo.mp4">
+  <a href="https://clipchamp.com/watch/ix93z97k9Wb?utm_source=embed&utm_medium=embed&utm_campaign=watch">
     <img alt="Template Video" src="https://img.shields.io/badge/Template-Video%20-brightgreen" />
   </a>
 </p>
