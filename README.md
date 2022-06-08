@@ -5,6 +5,9 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
+  <a href="/TemplateVideo.mp4">
+    <img alt="Template Video" src="https://img.shields.io/badge/Template-Video%20-brightgreen" />
+  </a>
 </p>
 
 ![Template Screenshot](TemplateScreenshot.png?raw=true "Template Screenshot")
