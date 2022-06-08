@@ -10,6 +10,9 @@
   </a>
 </p>
 
+### Note: 
+The Stripe webhook passes 500 Err code(Internal Server Error) which prevented the implementation of the Order Page Logic and integration of Firebase Database.
+
 ![Template Screenshot](TemplateScreenshot.png?raw=true "Template Screenshot")
 
 ## Next.js + Tailwind CSS
