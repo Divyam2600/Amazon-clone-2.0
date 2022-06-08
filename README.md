@@ -5,13 +5,18 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
-  <a href="https://clipchamp.com/watch/ix93z97k9Wb?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-    <img alt="Template Video" src="https://img.shields.io/badge/Template-Video%20-brightgreen" />
-  </a>
 </p>
 
-### Note: 
-The Stripe webhook passes 500 Err code(Internal Server Error) which prevented the implementation of the Order Page Logic and integration of Firebase Database.
+### About The Build: 
+Amazon 2.0 is one which fetches products data from FakeStore Api and has Slick Animations, Eye-Catching UI, Toast notifications, Stripe Payment Integration and many more. However, the Stripe webhook passes 500 Err code(Internal Server Error) which prevented the implementation of the Order Page Logic and integration of Firebase Database.
+
+<p>
+  Click 
+  <a href="https://clipchamp.com/watch/ix93z97k9Wb?utm_source=embed&utm_medium=embed&utm_campaign=watch">
+    <img alt="Template Video" src="https://img.shields.io/badge/Template-Video%20-brightgreen" style='margin-bottom:-5px' />
+  </a>
+  to view the demo of the build 
+</p>
 
 ![Template Screenshot](TemplateScreenshot.png?raw=true "Template Screenshot")
 
