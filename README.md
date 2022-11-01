@@ -1,16 +1,15 @@
 # Amazon Clone 2.0
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
+  <img alt="Amazon Clone 2.0" src="https://img.shields.io/badge/Amazon-Clone%202.0-blue" />
+  <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow" />
   <a href="https://clipchamp.com/watch/ix93z97k9Wb?utm_source=embed&utm_medium=embed&utm_campaign=watch">
-    <img alt="Template Video" src="https://img.shields.io/badge/Template-Video%20-brightgreen" />
+    <img alt="Template Video" src="https://img.shields.io/badge/Template-Video-brightgreen" />
   </a>
 </p>
 
-### About The Build: 
+### About The Build:
+
 Amazon 2.0 is one which fetches products data from FakeStore Api and has Slick Animations, Eye-Catching UI, Toast notifications, Stripe Payment Integration and many more. However, the Stripe webhook passes 500 Err code(Internal Server Error) which prevented the implementation of the Order Page Logic and integration of Firebase Database.
 
 <p>
@@ -23,7 +22,7 @@ Amazon 2.0 is one which fetches products data from FakeStore Api and has Slick A
 
 Next.js is a React Production Framework which gives the best developer experience with all the features for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed.
 
-## How To Start :
+## How To Start:
 
 ### Start with a pre-made Starter Template
 
@@ -34,14 +33,16 @@ npx create-next-app --example with-tailwindcss with-tailwindcss-app
 # or
 yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
-### Now finally run your Project :
+
+### Now finally run your Project:
+
 Run your build process with `npm run dev` or whatever command is configured in your `package.json` file.
 
 ```bash
 npm run dev
 ```
 
-## Environment variables :
+## Environment variables:
 
 Open or create a `.env` file then edit add this setting
 
@@ -66,12 +67,11 @@ HOST=http://localhost:3000
 # http://localhost:3000/api/auth/callback/google
 ```
 
-
 ## Author
 
 👤 **Divyam Agarwal**
 
-- Website: 
+- Website: [https://divyamag.vercel.app/](https://divyamag.vercel.app/)
 - Github: [@Divyam2600](https://github.com/Divyam2600)
 
 ## Show your support
